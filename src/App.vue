@@ -1,28 +1,67 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <navigation-footer />
+    <div class="content">
+      <div ></div>
+      <card />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavigationFooter from './components/NavigationFooter.vue'
+import Card from './components/Card.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    NavigationFooter,
+    Card
+  },
+  data () {
+    return {
+      cards: [
+        {
+          bannerImage: 'Banner-20-Delicatck.png',
+          bannerText: '',
+          title: 'Delicateck Caracas',
+          subtitle: 'Supermercado',
+          rating: 4.5,
+          shipping: '3 días',
+          spend: 'Gasta $ 80.000 para envio GRATIS'
+        },
+        {
+          bannerImage: 'Banner-20OFF-Lomas.png',
+          bannerText: '',
+          title: 'Lomas Supermercados',
+          subtitle: 'Supermercado',
+          rating: 4.5,
+          shipping: '3 días',
+          spend: 'Gasta $ 80.000 para envio GRATIS'
+        },
+      ]
+    }
+  },
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="stylus">
+#app 
+  font-family 'Poppins', sans-serif
+  font-style normal
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  text-align center
+  color #2c3e50
+  margin-top 60px
+
+.content
+  position relative
+  margin 0 20px 0 24px
+
+.body {
+  margin 0 0 86px 0
 }
+
 </style>
+
