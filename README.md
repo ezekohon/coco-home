@@ -26,3 +26,10 @@ Hay algunas cosas que mejoraría con más tiempo, cosa que no quise perder en co
  - Las fuentes las cargaría con archivo local, y no con un @import
  - Mejoraría la style guide para usar variables y no repetir estilos en la aplicación
  - Implementar routeo
+
+### Screen Shots
+
+![image](https://user-images.githubusercontent.com/19839662/111883171-72dc3300-8998-11eb-9e00-409942fcb39b.png)
+
+![image](https://user-images.githubusercontent.com/19839662/111883180-7d96c800-8998-11eb-9700-9a9d80de670c.png)
+
