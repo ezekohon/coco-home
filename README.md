@@ -20,10 +20,8 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
 ### Notes
 Hay algunas cosas que mejoraría con más tiempo, cosa que no quise perder en configuración:
   Los svgs los agregaría como archivos .svg y los convertiría a componentes con vue-svg-loader
   Las fuentes las cargaría con archivo local, y no con un @import
+  Implementar routeo

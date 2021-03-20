@@ -1,15 +1,17 @@
 <template>
   <nav class="nav">
-    <a href="#" class="nav__link">
+    <a href="#" class="nav__link  nav__link--active">
       <market-icon/>
       <span class="nav__text">Tiendas</span>
     </a>
-    <a href="#" class="nav__link nav__link--active">
+    <a href="#" class="nav__link">
       <location-icon/>
       <span class="nav__text">Caracas</span>
     </a>
     <a href="#" class="nav__link">
-      <cart-icon/>
+      <div class="nav__cart">
+        <cart-icon/>
+      </div>
     </a>
     <a href="#" class="nav__link">
       <dollar-icon/>
@@ -44,43 +46,43 @@ export default {
 
 <style lang="stylus" scoped>
 .nav
-  position: fixed
-  bottom: 0
-  right: 0
-  width: 100%
-  height: 86px
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2)
-  background-color: #ffffff
-  display: flex
-  overflow-x: auto
-  border-radius: 20px 20px 0 0
+  position fixed
+  display flex
+  bottom 0
+  right 0
+  width 100%
+  height 86px
+  box-shadow 0 0 3px rgba(0, 0, 0, 0.2)
+  background-color #ffffff
+  overflow-x auto
+  border-radius 20px 20px 0 0
 
-.nav__link
-  display: flex
-  flex-direction: column
-  align-items: center
-  justify-content: center
-  flex-grow: 1
-  min-width: 50px
-  overflow: hidden
-  white-space: nowrap
-  font-size: 13px
-  color: #444444
-  text-decoration: none
-  -webkit-tap-highlight-color: transparent
-  transition: background-color 0.1s ease-in-out
+  &__link
+    display flex
+    flex-direction column
+    align-items center
+    justify-content center
+    flex-grow 1
+    min-width 50px
+    overflow hidden
+    white-space nowrap
+    font-size 13px
+    color #444444
+    text-decoration none
+    -webkit-tap-highlight-color transparent
+    transition background-color 0.1s ease-in-out
 
-.nav__link:hover
-  background-color: #eeeeee
+    &--active
+      color #00AF71
 
-.nav__link--active
-  color: #009578
+  &__text
+    font-size 10px
+    color #8CA2AE
 
-.nav__icon
-  font-size: 18px
-
-.nav__text
-  font-size: 10px
-  color: #8CA2AE
+  &__cart
+    box-shadow 2px 2px 6px 0px rgba(202,202,202,0.69)
+    padding 15px
+    border-radius 15px
+    margin-bottom 35px
 </style>
 
